@@ -1,0 +1,195 @@
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+   z-index: 2;
+ }
+ 
+ .isotope-hidden.isotope-item {
+   pointer-events: none;
+   z-index: 1;
+ }
+ 
+ /**** Isotope CSS3 transitions ****/
+ 
+ .isotope,
+ .isotope .isotope-item {
+   -webkit-transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+       -ms-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+           transition-duration: 0.8s;
+ }
+ 
+ .isotope {
+   -webkit-transition-property: height, width;
+      -moz-transition-property: height, width;
+       -ms-transition-property: height, width;
+        -o-transition-property: height, width;
+           transition-property: height, width;
+ }
+ 
+ .isotope .isotope-item {
+   -webkit-transition-property: -webkit-transform, opacity;
+      -moz-transition-property:    -moz-transform, opacity;
+       -ms-transition-property:     -ms-transform, opacity;
+        -o-transition-property:      -o-transform, opacity;
+           transition-property:         transform, opacity;
+ }
+ 
+ /**** disabling Isotope CSS3 transitions ****/
+ 
+ .isotope.no-transition,
+ .isotope.no-transition .isotope-item,
+ .isotope .isotope-item.no-transition {
+   -webkit-transition-duration: 0s;
+      -moz-transition-duration: 0s;
+       -ms-transition-duration: 0s;
+        -o-transition-duration: 0s;
+           transition-duration: 0s;
+ }
+ 
+ /* End: Recommended Isotope styles */
+ 
+ 
+ 
+ /* disable CSS transitions for containers with infinite scrolling*/
+ .isotope.infinite-scrolling {
+   -webkit-transition: none;
+      -moz-transition: none;
+       -ms-transition: none;
+        -o-transition: none;
+           transition: none;
+ }
+ 
+ 
+ 
+ /**** Isotope styles ****/
+ 
+ /* required for containers to inherit vertical size from window */
+ /*html,
+ body {
+   height: 100%;
+ }
+ */
+ #container {
+   padding: 20px 0px;
+ }
+ 
+ .height-01{
+ height: 250px;
+ width: 28%;
+ }
+ .height-02,{
+ height: 250px;
+ width: 25%;
+ }
+ .height-03{
+   width: 180px;
+   height: 180px;
+ }
+ .element {
+   margin: 1px;
+   float: left;
+   overflow: hidden;
+   position: relative;
+   color: #222;
+ }
+ 
+ /*.element.web          { background: #F00 url("../images/zoom.png") no-repeat center center; 
+ background: hsl(   0, 100%, 50%)  url("../images/zoom.png") no-repeat center center; }
+ .element.branding  { background: #F80 url("../images/zoom.png") no-repeat center center; background: hsl(  36, 100%, 50%) url("../images/zoom.png") no-repeat center center;}
+ .element.print        { background: #0F0 url("../images/zoom.png") no-repeat center center; background: hsl( 108, 100%, 50%) url("../images/zoom.png") no-repeat center center;}
+ .element.creative { background: #0FF url("../images/zoom.png") no-repeat center center; background: hsl( 180, 100%, 50%) url("../images/zoom.png") no-repeat center center;}
+ .element.modern       { background: #08F url("../images/zoom.png") no-repeat center center; background: hsl( 216, 100%, 50%) url("../images/zoom.png") no-repeat center center;}
+ .element.other  { background: #00F url("../images/zoom.png") no-repeat center center;; background: hsl( 252, 100%, 50%) url("../images/zoom.png") no-repeat center center;}
+ .element.ecommerce         { background: #F0F url("../images/zoom.png") no-repeat center center;background: hsl( 288, 100%, 50%) url("../images/zoom.png") no-repeat center center;}
+ .element.digital       { background: #F08 url("../images/zoom.png") no-repeat center center; background: hsl( 324, 100%, 50%) url("../images/zoom.png") no-repeat center center;}
+ 
+ */
+ .element * {
+   position: absolute;
+   margin: 0;
+ }
+ 
+ .element .symbol {
+   left: 0.2em;
+   top: 0.4em;
+   font-size: 3.8em;
+   line-height: 1.0em;
+   color: #FFF;
+ }
+ .element.large .symbol {
+   font-size: 4.5em;
+ }
+ 
+ .element.fake .symbol {
+   color: #000;
+ }
+ 
+ .element .name {
+   left: 0.5em;
+   bottom: 1.6em;
+   font-size: 1.05em;
+ }
+ 
+ .element .weight {
+   font-size: 0.9em;
+   left: 0.5em;
+   bottom: 0.5em;
+ }
+ 
+ .element .number {
+   font-size: 1.25em;
+   font-weight: bold;
+   color: hsla(0,0%,0%,.5);
+   right: 0.5em;
+   top: 0.5em;
+ }
+ 
+ .variable-sizes .element.width2 { width: 230px; }
+ 
+ .variable-sizes .element.height2 { height: 230px; }
+ 
+ .variable-sizes .element.width2.height2 {
+   font-size: 2.0em;
+ }
+ 
+ .element.large,
+ .variable-sizes .element.large,
+ .variable-sizes .element.large.width2.height2 {
+   font-size: 3.0em;
+   width: 350px;
+   height: 350px;
+   z-index: 100;
+ }
+ 
+ .clickable .element:hover {
+   cursor: pointer;
+ }
+ 
+ .clickable .element:hover h3 {
+   text-shadow:
+     0 0 10px white,
+     0 0 10px white
+   ;
+ }
+ 
+ .clickable .element:hover h2 {
+   color: white;
+ }
+ 
+ /**** Filters ****/
+ 
+ #filters{
+   margin: 5px 0px;
+   padding: 0px;
+   list-style: none;
+ }
+ 
+ #filters li {
+   display: inline-block;
+   margin-right: -1px;
+ }
+ 

@@ -1,0 +1,411 @@
+/* Table of Content
+==================================================
+1.	Typography
+2.  Global Styles (body, link color, gap, ul, section-title, overlay etc)
+3.  Header area
+4.	Banner area
+
+	
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap');
+/* ============================== */
+
+html {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  background: black;
+  /* overflow: auto; */
+}
+
+.banner_area {
+  width: 20%;
+  height: 100%;
+  background: url(../images/nft.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.select_area {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0;
+}
+.select_area_footer{
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  margin-top: 45px;
+}
+.download_file_type_title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.download_file_type_text {
+  display: flex;
+}
+
+.download_file_type_text ul {
+  list-style: none;
+  padding: 0;
+  width: 120px;
+}
+
+.download_file_type_text ul li {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  line-height: 30px;
+  cursor: pointer;
+}
+.download_file_type_text ul li:hover{
+  color: red;
+}
+.download_file_type hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 4px solid #b81f25;
+  width: 15px;
+  position: absolute;
+}
+
+.nft_title {
+  color: #b81f25;
+  text-align: center;
+}
+
+.box {
+  /* width: 70%; */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 800;
+  padding: 10px 0;
+}
+
+.bar {
+  background: #000000;
+  height: 40px;
+  padding: 6px;
+  margin: 85px auto 20px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 1px solid #b81f25;
+}
+
+.upload_text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #000000, #b81f25);
+  border-radius: 50px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  color: #fff;
+  background: #b81f25;
+  padding: 15px 10px;
+  outline: none;
+  border: 2px solid #b81f25;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+  color: #b81f25;
+}
+.close{
+  width: auto;
+}
+.modal-body{
+  text-align: center;
+  justify-content: center;
+}
+.modal-dialog{
+  max-width: 900px !important;
+}
+.output {
+  width: 100%;
+  display: none;
+}
+.transactions{
+  align-items: center;
+  vertical-align: middle;
+}
+.tx-hash-output{
+  border-radius: 6px;
+  border: 1px solid #b81f25;
+  text-align: start;
+  margin-top: 5px;
+  padding: 10px 10px;
+  color: white;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.view_address{
+  border-radius: 6px;
+  border: 1px solid #b81f25;
+  text-align: start;
+  margin-top: 5px;
+  padding: 10px 10px;
+  color: white;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tx-hash-output a:hover{
+  color: #b81f25;
+}
+.tx-hash {
+  color: white;
+  font-weight: 600;
+  
+}
+.tokken-id-output{
+  border-radius: 6px;
+  border: 1px solid #b81f25;
+  text-align: start;
+  padding: 10px 10px;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+p{
+  margin-bottom: 0 !important;
+}
+.Token_id{
+  margin-bottom: 15px;
+}
+.tokken_name{
+  color: #b81f25;
+  font-size: 18px;
+}
+.tokken_hash_id{
+  word-wrap: break-word;
+  color: white;
+  font-size: 15px;
+}
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #b81f25; 
+}
+
+
+.count_area{
+  margin-top: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  display: nonef;
+}
+.counter {
+  color: #d5161d;
+  font-size: 18px;
+  font-weight: 500;
+  width: 60px;
+}
+
+.error_messeg {
+  color: #d5161d;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+@keyframes animate {}
+
+.body_area {
+  width: 80%;
+  background-color: #000000;
+}
+
+.body_area_title {
+margin: 15px 0;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.finished_alert {
+  color: #08A474;
+  font-size: 18px;
+}
+
+.file_upload_place {
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  justify-items: center;
+  padding: 100px;
+  /* width: 70%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.wallet_adress{
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  justify-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+  margin-top: 40px;
+}
+.wallet_adress_002{
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  justify-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+  margin-top: 20px;
+}
+.connect_wallet{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  width: 10%;
+  align-self: center;
+  justify-self: center;
+  color: #fff;
+  background: #b81f25;
+  padding: 8px 10px;
+  outline: none;
+  border: 2px solid #b81f25;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+.copy_base64{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  color: #fff;
+  background: #b81f25;
+  padding: 8px 10px;
+  outline: none;
+  border: 2px solid #b81f25;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.connect_wallet_002{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  width: 10%;
+  align-self: center;
+  justify-self: center;
+  color: #fff;
+  background: #b81f25;
+  padding: 8px 10px;
+  outline: none;
+  border: 2px solid #b81f25;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+.view_file_name{
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+}
+.files{
+  margin-top: 10px;
+}
+.view_file{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  width: 10%;
+  align-self: center;
+  justify-self: center;
+  color: #fff;
+  background: #b81f25;
+  padding: 8px 10px;
+  outline: none;
+  border: 2px solid #b81f25;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.connect_wallet:hover, .connect_wallet_002:hover, .copy_base64:hover {
+  background: white;
+  color: #b81f25;
+}
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <!-- Basic Page Needs ================================================== -->
+    <meta charset="utf-8">
+
+    <!-- Mobile Specific Metas ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- Site Title -->
+    <title>NETFLIX NFT</title>
+
+
+    <!-- CSS
+         ================================================== -->
+    <!-- Bootstrap -->
+
+    <link href="../static/images/logos/web_icon.png" rel="icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+
+    <!-- Template styles-->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="../static/css/responsive.css">
+
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="banner_area">
+            <div class="select_area">
+                <div class="nft_title">
+                    <img src="../static/images/main_icon.png" alt="">
+                </div>
+                <div class="download_file_type">
+                    <div class="download_file_type_title">
+                        Image
+                    </div>
+                    <div class="download_file_type_text">
+                        <ul>
+                            <li>Bmp</li>
+                            <li>Gif</li>
+                            <li>Jpg</li>
+                            <li>Png</li>
+                        </ul>
+                        <ul>
+                            <li>Raw</li>
+                            <li>Tiff</li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+                <div class="download_file_type">
+                    <div class="download_file_type_title">
+                        Sound
+                    </div>
+                    <div class="download_file_type_text">
+                        <ul>
+                            <li>Wav</li>
+                            <li>Wma</li>
+                            <li>Mp3/mp4</li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+                <div class="download_file_type">
+                    <div class="download_file_type_title">
+                        Video
+                    </div>
+                    <div class="download_file_type_text">
+                        <ul>
+                            <li>Mkv</li>
+                            <li>AVi</li>
+                            <li>Fiv</li>
+                            <li>Mov</li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+                <div class="download_file_type">
+                    <div class="download_file_type_title">
+                        Document
+                    </div>
+                    <div class="download_file_type_text">
+                        <ul>
+                            <li>PDF</li>
+                            <li>Ppt</li>
+                            <li>Doc/docx</li>
+                            <li>Xls</li>
+                        </ul>
+                        <ul>
+                            <li>ai</li>
+                            <li>Psd</li>
+                            <li>Hwp</li>
+                            <li>Txt</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="select_area_footer">
+                    Copyright ©2021. <br>
+                    CenterPrime All rights reserved.
+                </div>
+            </div>
+            <!-- <img src="/images/nft.png" alt=""> -->
+
+        </div>
+        <div class="body_area ">
+            <div id="connectBtnDiv" class="connect_wallet">
+                Connect Wallet
+            </div>
+{#            <a id="myfilesUrl">#}
+{#                <div class="connect_wallet_002">#}
+{#                    My files#}
+{#                </div>#}
+{#            </a>#}
+            <div class="container">
+                <div class="row">
+                    <div class="wallet_adress col-lg-9 mx-auto">
+                        <p id="walletAddress"></p>
+                    </div>
+                    <div class="body_area_title col-lg-10 mx-auto">
+                        Try converting the file to NFT format.<br>
+                        You can meet a free world.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 mx-auto">
+                        <div class="file_upload_place" id="uploadArea">
+                            <label for="keystoreFile">
+                                <img id="selectedImg" style="height: 150px" src="../static/images/icon_upload.png"
+                                     alt="">
+                            </label>
+                            <input type="file" id="keystoreFile" style="display: none;" name="myImage"
+                                   accept="image/x-png,image/jpeg,video/mp4"/>
+                        </div>
+                        <div class="box">
+                            <div class="count_area">
+                                <p id="uploadStatusMessage">NFT transformation is <span class="counter"></span>complete.
+                                </p>
+                            </div>
+
+                            <div class="bar">
+                                <div class="upload_text"> Upload your files, and soon you'll have a free world!</div>
+                                <div class="fill"></div>
+                            </div>
+                            <div class="timer">
+                                <button onclick="return upload_image();">Upload the file converted to NFT</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="output col-lg-9 mx-auto">
+                        <div class="transactions">
+                            <div class="tx-hash ">Transaction Hash</div>
+                            <div class=" tx-hash-output">
+                                <a target="_blank" rel="noopener noreferrer" id="txHashA" href=""><p id="txHashP"></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="transactions">
+                            <div class="tx-hash ">Test For img</div>
+
+                            <div class="view_address">
+                                <a target="_blank" rel="noopener noreferrer" href="https://codebeautify.org/base64-to-image-converter">
+                                    <p> Convert Your Base64 to Image
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="transactions">
+                            <div class="tx-hash ">Test For video</div>
+
+                            <div class=" view_address">
+                                <a target="_blank" rel="noopener noreferrer" href="https://base64.guru/converter/decode/video">
+                                    <p> Convert Your Base64 to Video
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <input type="text" style="visibility: hidden" id="copyTarget"/>
+
+                        <div id="copyBtn" class="copy_base64" type="button" onclick="copyBase64();">
+                            Copy Base64
+                        </div>
+                        <div id="nftContainer" class="tokken-id-output">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Javascript Files
+        ================================================== -->
+
+<!-- initialize jQuery Library -->
+<script src="../static/js/jquery.js"></script>
+
+<script src="../static/js/popper.min.js"></script>
+<!-- Bootstrap jQuery -->
+<script src="../static/js/bootstrap.min.js"></script>
+<!-- Counter -->
+
+<!-- Template custom -->
+<script src="../static/js/web3.min.js"></script>
+<script src="../static/js/main.js"></script>
+<script src="../static/js/centerprime.js"></script>
+<!-- Body inner end -->
+</body>
+
+</html>
