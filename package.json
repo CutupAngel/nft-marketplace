@@ -1,0 +1,22 @@
+{
+  "name": "nft-marketplace",
+  "version": "1.0.0",
+  "description": "## Overview This project contributes to the content industry by converting various content formats (movies, music, photographs, documents) into NFT tokens. Until now, the blockchain industry has been represented by financial services. However, in the real economy, content services are also important. To date, content services using NFT tokens have been stored on or linked to other chain networks, making it difficult to assess their actual value. Therefore, we have created a technology that can easily make content usable in the blockchain network. We also want to make changes to the NFT by tokenizing the actual content, not simply storing or exchanging FT or NFT tokens.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CutupAngel/nft-marketplace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CutupAngel/nft-marketplace/issues"
+  },
+  "homepage": "https://github.com/CutupAngel/nft-marketplace#readme",
+  "dependencies": {
+    "contract-optimize": "^1.1.0"
+  }
+}
